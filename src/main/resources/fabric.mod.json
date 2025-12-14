@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "antiplots",
+  "version": "${version}",
+  "name": "antiplots",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/antiplots/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "tk.chroma.antiplots.client.AntiplotsClient"
+    ],
+    "main": [
+      "tk.chroma.antiplots.Antiplots"
+    ]
+  },
+  "mixins": [
+    "antiplots.mixins.json",
+    {
+      "config": "antiplots.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "cloth-config": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
