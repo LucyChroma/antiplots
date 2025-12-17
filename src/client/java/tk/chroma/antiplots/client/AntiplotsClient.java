@@ -32,7 +32,6 @@ public class AntiplotsClient implements ClientModInitializer {
             if (ticks%100 == 0) {
                 try {
                     save();
-                    System.out.println("saved");
                 } catch (Exception ignored) {
                     System.out.println("failed to save");
                 }
